@@ -1,0 +1,131 @@
+
+body {
+    margin: 0;  
+}
+
+.navbar {
+    background: rgb(2,0,36);
+    background: linear-gradient(86deg, rgba(2,0,36,1) 0%, rgba(121,9,120,1) 50%, rgba(0,212,255,1) 100%);
+    box-shadow: 0px 2px 4px 1px black;
+    border-radius: 1px;   
+}
+.sticky {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+.main-nav {
+    display: flex;
+    text-align: end;
+    color: white; 
+    list-style: none;
+    margin:0;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+li {
+    padding: 15px;
+    text-decoration: none;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-shadow: 5px 5px 5px black;
+    font-size: 21px;
+    transition: 0.2s;
+    padding: 3px;
+    color: rgb(106, 250, 250);
+
+}
+
+.push {
+    margin-left: auto;
+}
+
+/*COVER*/
+
+.container {
+    background: rgb(2,0,36);
+    background: linear-gradient(86deg, rgba(2,0,36,1) 0%, rgba(39,116,182,0.7791491596638656) 33%, rgba(0,212,255,1) 100%);
+    box-shadow: 0px 1px 2px 1px rgb(14, 14, 14); 
+    height: 400px;
+}
+
+/*Projects*/
+.grid-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+.grid-wrapper {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    margin: 0;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.box > img {
+    width: 100%;
+}
+.box {
+    background-color: gray;
+    padding: 20px;
+    border-radius: 5px;
+}
+.box:hover {
+    transition: 0.3s;
+    box-shadow: 1px 4px 4px 1px black;
+    padding: 18px;
+    border-radius: 8px;
+}
+
+.paragraph-style {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 10px;
+    margin: 20px;
+}
+
+
+
+/* FOOTER */ 
+.footer-style {
+    background-color: rgb(48, 75, 126);
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: rgb(0,78,255);
+    background: linear-gradient(86deg, rgba(0,78,255,1) 0%, rgba(29,167,126,0.7791491596638656) 49%, rgba(22,12,186,1) 100%);
+    border-radius: 3px;
+}
+
+
+
+
+
+
+/*MEDIA QUERIES*/
+
+@media only screen and (max-width: 580px) {
+    .main-nav {
+        font-size: 15px;
+        height: 50px; 
+        padding: 5px;
+        padding-left: 10px;
+    }
+    a:hover {
+        font-size: 15px;
+    }
+  
+}
+
+
